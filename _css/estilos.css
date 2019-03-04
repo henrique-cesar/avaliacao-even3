@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22pt;
+  color: black;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14pt;
+  color: black;
+  margin-left: 72px;
+}
+
+h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14pt;
+  text-align: left;
+  color: black;
+}
+
+p {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14pt;
+  margin-left: 72px;
+}
+
+a {
+  color: white;
+  text-align: center;
+}
+
+
+.container-montar-layout h1 {
+  margin-top: 50px;
+  max-height: 2000px;
+}
+
+.container-montar-layout {
+    width: 100%;
+    min-height: 500px;
+    padding: 25px;
+    padding-left: 72px;
+}
+
+.container-upload-logo {
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  margin-bottom: 30px;
+}
+
+.container-importar-candidatos {
+  margin-left: 72px;
+}
+
+div#container-cracha-view {
+  float: left;
+  width: 300px;
+  height: 424px;
+  background: rgba(0,0,0,.4);
+}
+
+div#area-edit-background {
+  width: 300px;
+  height: 424px;
+  position: relative;
+  float: left;
+}
+
+div#container-cracha-textos {
+  float: left;
+  margin-left: 30px;
+  width: 450px;
+  height: 424px;
+  padding: 25px;
+}
+
+div#container-upload-logo {
+  float: left;
+  width: 370px;
+  height: 424px;
+  padding: 25px;
+  border-left: 5px dotted #e5e8ea;
+}
+
+div#area-text-preview {
+  height: 50px;
+  background: white;
+  border: 1px dashed #000000;
+  margin: 0 auto;
+}
+
+.passos {
+  clear: both;
+  padding: 25px 0;
+}
+
+button#btn-gerar-tag {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.btn-group button{
+  background-color: #FFFFFF;
+  border: 2px solid #E9ECEF
+}
+/*ELEMENTOS DO RESIZABLE*/
+
+.ui-resizable-handle {
+    width: 10px;
+    height: 10px;
+    max-height: 10px;
+    background-color: #e74c3c;
+    position: absolute;
+}
+.ui-resizable-nw {
+    left: -5px;
+    top: -5px;
+    cursor: nw-resize;
+}
+.ui-resizable-ne {
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+}
+
+.ui-resizable-sw {
+    bottom: -5px;
+    left: -5px;
+    cursor: sw-resize;
+}
+.ui-resizable-se {
+    bottom: -5px;
+    right:-5px;
+    cursor: se-resize;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+.fileUpload {
+    position: absolute;
+    overflow: hidden;
+    margin: 10px;
+    float: right;
+}
+.fileUpload input.upload {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}

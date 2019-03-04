@@ -1,0 +1,51 @@
+{{Nome}}	{{País}}	{{Instituição}}	{{Email}}	{{Inscrição}}
+Abdellatif Bouazza	Brasil	Não Respondeu	produto+abdellatif@even3.com.br	Pendente
+Abelardo Gonçalves Pinto	Brasil	UNICAMP	produto+abelardo@even3.com.br	Aprovado
+Clemente Tiriats	Equador	NACIONALIDAD ACHUAR DE ECUADOR	produto+clemente@even3.com.br	Pendente
+Cleonice Neves Farias	Brasil	Não Respondeu	produto+cleonice@even3.com.br	Pendente
+Cloves Farias Pereira	Brasil	UNIVERSIDADE FEDERAL DO AMAZONAS	produto+cloves@even3.com.br	Aprovado
+Colette Lebel	Canada	La Coop fédérée	produto+colette@even3.com.br	Aprovado
+Confecoop -Confederação Cooperativa Portuguesa Ccrl	Portugal	CONFECOOP	produto+confecoop@even3.com.br	Pendente
+CORECON ACADÊMICO / CORECON- AM	Brasil	CONSELHO REGIONAL DE ECONOMIA	produto+corecon@even3.com.br	Pendente
+Cris Guimarães Cirino da Silva	Brasil	Não Respondeu	produto+cris@even3.com.br	Pendente
+Cristiana Maria Pedroso Yoshida	Brasil	Não Respondeu	produto+cristiana@even3.com.br	Pendente
+Daguinete Maria Chaves Brito	Brasil	UNIVERSIDADE FEDERAL DO AMAPÁ	produto+daguinete@even3.com.br	Pendente
+Dailton Lacerda	Brasil	UFPB	produto+dailton@even3.com.br	Aprovado
+Daniel Borges Nava	Brasil	UFAM	produto+daniel@even3.com.br	Aprovado
+Dari Araujo	Brasil	FUCAPI - FUNDAÇÃO CENTRO DE ANÁLISE, PESQUISA E INOVAÇÃO TECNOLÓGICA	produto+dari@even3.com.br	Pendente
+David E. Resende Almeida	Brasil	CENTRO UNIVERSITÁRIO UNA	produto+david@even3.com.br	Pendente
+Duarcides Ferreira Mariosa	Brasil	UAL - Universidade Autonoma de Lisboa	produto+duarcides@even3.com.br	Aprovado
+Dulcilene Saraiva Reis	Brasil		produto+dulcilene@even3.com.br	Pendente
+Edilane Castelo Branco	Brasil	UNIVERSIDADE FEDERAL DO AMAZONAS	produto+edilane@even3.com.br	Aprovado
+Edilson Carneiro	Brasil	FACULDADE DE ARACAJU	produto+edilson@even3.com.br	Pendente
+EDIMÉIA MARIA RIBEIRO DE MELLO	Brasil	CENTRO UNIVERSITÁRIO UNA	produto+ediméia@even3.com.br	Aprovado
+Edison Yoshihiro Hamaji	Brasil	UNIVERSIDADE PAULISTA	produto+edison@even3.com.br	Aprovado
+Edjane Santana de Oliveira	Brasil	Não Respondeu	produto+edjane@even3.com.br	Pendente
+Edna Ferreira Maddarena Lopez	Brasil	Não Respondeu	produto+edna@even3.com.br	Pendente
+Ednalva Felix das Neves	Brasil	Não Respondeu	produto+ednalva@even3.com.br	Pendente
+Edsa Santos Silva	Brasil	UNIVERSIDADE FEDERAL DO AMAZONAS	produto+edsa@even3.com.br	Pendente
+EDSON AUGUSTO TAVARES SANTIAGO BORGES	Brasil	UNIVERSIDADE FEDERAL DE GOIÁS	produto+edson@even3.com.br	Pendente
+Fernanda Araujo	Brasil	UNIVERSIDADE FEDERAL DE MINAS GERAIS	produto+fernanda@even3.com.br	Pendente
+Francisca Geny Marfim Fernandes	Brasil	Não Respondeu	produto+francisca@even3.com.br	Pendente
+Francisco Tacio de Souza Simão	Brasil	CENTRO UNIVERSITÁRIO DO NORTE	produto+francisco@even3.com.br	Aprovado
+Frankilandio Teixeira Costa	Brasil	CENTRO UNIVERSITÁRIO DO NORTE	produto+frankilandio@even3.com.br	Pendente
+Gabriel De Vuono	Brasil	PONTIFÍCIA UNIVERSIDADE CATÓLICA DE CAMPINAS	produto+gabriel@even3.com.br	Pendente
+Gabrielle Astier de Villatte Wheatley Okretic	Brasil	PONTIFÍCIA UNIVERSIDADE CATÓLICA DE CAMPINAS	produto+gabrielle@even3.com.br	Aprovado
+Geovane Gesteira Sales Torres	Brasil	UFCA	produto+geovane@even3.com.br	Pendente
+Hasim ozudogru	Turquia	Gazi university	produto+hasim@even3.com.br	Pendente
+Helena Cantão de Sylvio	Brasil	UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ	produto+helena@even3.com.br	Pendente
+Hermes Gregório Melgar Saldarriaga	Brasil	UNIVERSIDADE FEDERAL DO AMAZONAS	produto+hermes@even3.com.br	Aprovado
+Hermogenes Henrique Oliveira Nascimento	Brasil	SEMA - Secretaria do Meio Ambiente	produto+hermogenes@even3.com.br	Pendente
+Wendell Lima Bandeira	Brasil	UNIVERSIDADE FEDERAL DO AMAZONAS - UFAM	produto+wendell@even3.com.br	Pendente
+Wenderson Gasparotto	Brasil	Não Respondeu	produto+wenderson@even3.com.br	Pendente
+Wesley Barbosa de Castro	Brasil	Faculdade Estácio do Amazonas	produto+wesley@even3.com.br	Pendente
+Wilson Antonio Ferreira Costa	Brasil	UNIVERSIDADE FEDERAL DO PARÁ	produto+wilson@even3.com.br	Aprovado
+Wolfram Elsner	Brasil	Não Respondeu	produto+wolfram@even3.com.br	Pendente
+Yadu C R	Índia	Centre for Development Studies	produto+yadu@even3.com.br	Pendente
+Yan Zany	Brasil	UNIVERSIDADE DO ESTADO DO AMAZONAS	produto+yan@even3.com.br	Pendente
+Yaneth Sarmiento	Brasil	Não Respondeu	produto+yaneth@even3.com.br	Pendente
+Yaneth Susana Sarmiento Noguera	Colômbia	Universidad Cooperativa de Colombia	produto+yaneth@even3.com.br	Aprovado
+Yasminne Marjorie McComb	Brasil	FACULDADE DE EDUCAÇÃO DE PORTO VELHO	produto+yasminne@even3.com.br	Pendente
+Yendry Sánchez Picado	Costa Rica	Universidad Nacional de Costa Rica	produto+yendry@even3.com.br	Pendente
+Yohanan Stryjan	Suécia	Södertörn University	produto+yohanan@even3.com.br	Pendente
+Zaine hete ribeiro de oliveira	Brasil	Não Respondeu	produto+zaine@even3.com.br	Pendente
