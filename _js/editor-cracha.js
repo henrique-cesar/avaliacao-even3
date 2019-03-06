@@ -57,7 +57,10 @@ $("#btn-gerar-tag").on('click', function(){
   if (document.getElementById('inserir-fundo').files.length === 0){
     alert("Adicione o fundo do seu crachá primeiro.")
   } else if (addTagNoCracha($("#input-tag").val())){
-    criarTextoEditavel($("#input-tag").val().toLowerCase(), preview_text);
+	if (!($("#input-texto-preview").val())){
+		$("#input-texto-preview").val(`Campo da tag {{${$("#input-tag").val()}}}`);
+	};
+	criarTextoEditavel($("#input-tag").val().toLowerCase(), preview_text); 
   } else if ($("#input-tag").val() === ""){
     alert("Primeiro adicione o ID da Tag.");
   } else {
@@ -147,6 +150,7 @@ function makeDraggable(elemento){
 
 function makeDraggableAndResizable(elemento){
   $(elemento).resizable({
+	handles: "ne, se, sw, nw",
     containment: 'parent',
     cursor: 'move',
     aspectRatio: true

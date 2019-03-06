@@ -52,8 +52,8 @@ function gerarPDF(participantes){
       var elementoLogo = document.getElementById("logo-img-edit"),
         logo = document.getElementById("logo-img-edit").src,
         areaLogo = document.getElementById("logo-edit"),
-        logoHeight = parseFloat((areaLogo.style.height).slice(0, -2)),
-        logoWidth = parseFloat((areaLogo.style.width).slice(0, -2));
+        logoHeight = areaLogo.offsetHeight,
+        logoWidth = areaLogo.offsetWidth;
     };
     for (let key = 0; participantes[key]; key++){
       doc.addImage(cracha, 'JPEG', 0, 0, 105, 148);
