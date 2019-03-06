@@ -13,8 +13,11 @@
   <body class="bg-light">
     <div class="passos">
       <h1><span class="badge badge-pill badge-dark">1</span> Monte o layout do seu crachá</h1>
-      <p><a class="btn btn-info" href="https://blog.even3.com.br/crachas-para-eventos-academicos/">Dica de templates</a></p>
-      <input type="file" name="inserir-fundo" id="inserir-fundo" accept="image/*"/>
+      <p><a class="btn btn-info" href="https://blog.even3.com.br/crachas-para-eventos-academicos/" target="_blank">
+        Dica de templates</a>
+        <label class="btn btn-primary" style="margin-bottom: 0px;">Adicionar Fundo<input id="inserir-fundo" type="file"
+          accept="image/*" style="display: none;">
+        </label></p>
     </div>
     <div class="container-montar-layout">
       <div id="container-cracha-view">
@@ -34,12 +37,9 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">{{</span>
                 </div>
-                <input type="text" class="form-control" id="input-tag" placeholder="Ex.: cidade" style="font-size: 12pt" required>
+                <input type="text" class="form-control" id="input-tag" placeholder="Ex.: cidade" style="font-size: 12pt">
                 <div class="input-group-append">
                   <span class="input-group-text">}}</span>
-                </div>
-                <div class="invalid-feedback" style="width: 100%;">
-                  O ID da Tag é obrigatório.
                 </div>
               </div>
             </div>
@@ -90,6 +90,7 @@
                 <button type="submit" class="btn btn-primary" id="btn-gerar-tag">ADD</button>
               </div>
             </div>
+            <p>* Para remover uma tag (ou a logo) da preview, basta dar um duplo clique.</p>
           </form>
         </div>
       </div>
@@ -97,9 +98,10 @@
         <div class="col-md-12 order-md-1">
           <h3>Logo do seu evento</h3>
           <div class="container-upload-logo">
-            <img src="_images/fundo-logo.png" style="max-width: 100%; max-height: 100%;">
+            <img src="_images/fundo-logo.png" id="img-logo" style="max-width: 100%; max-height: 100%;">
           </div>
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Adicionar logo</button>
+          <label class="btn btn-block btn-primary">Adicionar Logo<input id="btn-add-logo" type="file" style="display: none;">
+          </label>
         </div>
       </div>
     </div>
@@ -112,7 +114,7 @@
         <textarea rows = "10" cols = "100" id="texto-planilha"></textarea>
       </div>
       <div class="container-log-planilha">
-        <p id="numTags"></p>
+        <p id="numTags" style="margin: 0px"></p>
       </div>
     </div>
     <div class="passos" id="baixar-crachas">

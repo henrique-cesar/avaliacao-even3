@@ -82,6 +82,12 @@ div#container-cracha-textos {
   padding: 25px;
 }
 
+div#container-cracha-textos p {
+  margin: 10px 0; 
+  color: rgb(196, 33, 33);
+  font-size: 10pt;
+}
+
 div#container-upload-logo {
   float: left;
   width: 370px;
