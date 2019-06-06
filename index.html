@@ -3,53 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Criação de Crachás</title>
-    <script src="_js/jquery-3.3.1.min.js"></script>
-    <script src="_js/jquery-ui.min.js"></script>
-    <script src="_js/bootstrap.min.js"></script>
-    <script src="_js/jspdf.debug.js"></script>
     <link rel="stylesheet"  href="_css/bootstrap.min.css"/>
     <link rel="stylesheet"  href="_css/estilos.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body class="bg-light">
-    <div class="passos">
-      <h1><span class="badge badge-pill badge-dark">1</span> Monte o layout do seu crachá</h1>
-      <p><a class="btn btn-info" href="https://blog.even3.com.br/crachas-para-eventos-academicos/" target="_blank">
-        Dica de templates</a>
-        <label class="btn btn-primary" style="margin-bottom: 0px;">Adicionar Fundo<input id="inserir-fundo" type="file"
-          accept="image/*" style="display: none;">
-        </label></p>
-    </div>
-    <div class="container-montar-layout">
-      <div id="container-cracha-view">
-        <div id="area-edit-background">
-          <img class="fundo-cracha" src="_images/sem-fundo.png" style="max-width: 100%; max-height: 100%;">
-        </div>
+    <div class="container">
+      <h1 class="mt-5 mb-3 text-center"><i class="fas fa-palette"></i> Monte o layout do seu crachá</h1>
+      <div class="col-sm-9 col-md-4 mx-auto">
+        <a class="btn btn-warning btn-block btn-rounded" href="https://blog.even3.com.br/crachas-para-eventos-academicos/" target="_blank">Dicas de Templates</a>
       </div>
-      <div id="container-cracha-textos">
-        <!--Formulario Bootstrap-->
-        <div class="col-md-12 order-md-1">
-          <h3>Adicione campos</h3>
-          <form class="needs-validation" onSubmit="return false";>
-
-            <div class="mb-3">
-              <label for="input-tag">ID da Tag</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">{{</span>
-                </div>
-                <input type="text" class="form-control" id="input-tag" placeholder="Ex.: cidade" style="font-size: 12pt">
-                <div class="input-group-append">
-                  <span class="input-group-text">}}</span>
-                </div>
-              </div>
+    </div>
+    <div class="row mt-5 mx-0 justify-content-center text-white" style="background-color: #0a3d62">
+        <div class="col-lg-4 pb-5 my-auto">
+          <p class="lead">Adicione Campos:</p>
+          <form class="needs-validation" onSubmit="return false">
+            <div class="form-group">
+              <label for="input-tag">ID da Tag:</label>
+              <input class="form-control" type="text" id="input-tag" placeholder="Ex.: cidade">
             </div>
-
-            <div class="mb-3">
-              <label for="input-texto-exemplo">Nome exemplo <span class="text-muted">(Opcional)</span></label>
-              <input type="text" class="form-control" id="input-texto-exemplo" placeholder="Ex.: Recife">
+            <div class="form-group">
+              <label for="input-tag">Nome <span class="text-muted">(Opcional)</span>:</label>
+              <input class="form-control" type="text" id="input-tag" placeholder="Ex.: Recife">
             </div>
-            <div class="row">
-              <div class="col-md-4 mb-1">
+            <div class="form-row">
+              <div class="col-sm-4">
                 <label for="pais">Cor</label>
                 <select class="custom-select d-block w-100" id="select-cor">
                   <option value="black">Preto</option>
@@ -61,12 +39,12 @@
                   <option value="red">Vermelho</option>
                 </select>
               </div>
-              <div class="col-md-4 mb-1">
+              <div class="col-sm-4">
                 <label for="select-tamanho">Tamanho</label>
                 <select class="custom-select d-block w-100" id="select-tamanho">
                   <option value="8pt">8pt</option>
                   <option value="10pt">10pt</option>
-                  <option selected="selected" value="12pt">12pt</option>
+                  <option value="12pt" selected="selected" >12pt</option>
                   <option value="14pt">14pt</option>
                   <option value="16pt">16pt</option>
                   <option value="18pt">18pt</option>
@@ -74,54 +52,73 @@
                   <option value="22pt">22pt</option>
                 </select>
               </div>
-              <div class="col-md-4 mb-1">
-                <label for="btn-group">Estilo</label>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default" id="btn-bold"><b>N</b></button>
-                  <button type="button" class="btn btn-default" id="btn-italic"><i>I</i></button>
-                  <button type="button" class="btn btn-default" id="btn-underline"><u>S</u></button>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="btn-group">Estilo:</label><br>
+                  <div class="btn-group">
+                    <button type="button" class="btn col-4" id="btn-bold">
+                      <i class="fas fa-bold"></i>
+                    </button>
+                    <button type="button" class="btn col-4" id="btn-italic">
+                      <i class="fas fa-italic"></i>
+                    </button>
+                    <button type="button" class="btn col-4" id="btn-underline">
+                      <i class="fas fa-underline"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-            <hr class="mb-4">
+            <hr>
             <div class="input-group">
               <input type="text" class="form-control" id="input-texto-preview" placeholder="Pré-visualização" readonly>
               <div class="input-group-append">
                 <button type="submit" class="btn btn-primary" id="btn-gerar-tag">ADD</button>
               </div>
             </div>
-            <p>* Para remover uma tag (ou a logo) da preview, basta dar um duplo clique.</p>
           </form>
         </div>
-      </div>
-      <div id="container-upload-logo">
-        <div class="col-md-12 order-md-1">
-          <h3>Logo do seu evento</h3>
-          <div class="container-upload-logo">
-            <img src="_images/fundo-logo.png" id="img-logo" style="max-width: 100%; max-height: 100%;">
+        <div class="col-lg-3 mb-5 pt-3">
+          <div id="container-cracha-view">
+            <div id="area-edit-background">
+              <img class="fundo-cracha img-fluid" src="_images/sem-fundo.png" style="width: 640px">
+            </div>
           </div>
-          <label class="btn btn-block btn-primary">Adicionar Logo<input id="btn-add-logo" type="file" style="display: none;">
-          </label>
+          <div class="form-row mt-3">
+            <div class="col-6">
+              <label class="btn btn-dark btn-block btn-lg text-truncate" style="font-size: 12pt">
+                <i class="fas fa-portrait"></i>
+                <input id="inserir-fundo" type="file" accept="image/*" style="display: none;">
+              </label>
+            </div>
+            <div class="col-6">
+              <label class="btn btn-block btn-primary btn-lg text-truncate" style="font-size: 12pt">Add Logo<input id="btn-add-logo" type="file" style="display: none;"></label>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="passos">
-      <h1><span class="badge badge-pill badge-dark">2</span> Importe participantes</h1>
-      <h2>Copie o conteúdo da planilha Excel, incluindo os cabeçalhos e cole aqui</h2>
-    </div>
-    <div class="container-importar-candidatos">
-      <div class="container-texto-planilha">
-        <textarea rows = "10" cols = "100" id="texto-planilha"></textarea>
+    <div class="container">
+      <h1 class="text-center mt-5"><i class="fas fa-paste"></i> Importe participantes</h1>
+      <p class="lead text-center">Copie o conteúdo da planilha Excel, incluindo os cabeçalhos e cole aqui:</p>
+      <div class="col-md-9 justify-content-center mx-auto">
+        <div class="form-group">
+          <textarea class="form-control" id="texto-planilha" rows="10" cols="100"></textarea>
+        </div>
       </div>
-      <div class="container-log-planilha">
-        <p id="numTags" style="margin: 0px"></p>
+      <h1 class="mt-5 mb-3 text-center"><i class="fas fa-download"></i> Baixe os crachás</h1>
+      <button class="btn btn-success btn-lg btn-block m-5 col-lg-6 mx-auto" id="baixar" name="Baixar">Download</button>
+    </div>
+    <footer>
+      <div class="footer-copyright py-5 text-center bg-black">
+        2019 &copy; Henrique César:
+        <a href="http://www.github.com/henrique-cesar/" target="_blank">GitHub</a>
       </div>
-    </div>
-    <div class="passos" id="baixar-crachas">
-      <h1><span class="badge badge-pill badge-dark">3</span> Baixe os crachás</h1>
-      <p><button class="btn btn-success" id="baixar" name="Baixar">Download</button></p>
-    </div>
-    <script src="_js/version1.js"></script>
-    <script type="text/javascript" src="_js/editor-cracha.js"></script>
+      <script src="_js/jquery-3.3.1.min.js"></script>
+      <script src="_js/jquery-ui.min.js"></script>
+      <script src="_js/bootstrap.min.js"></script>
+      <script src="_js/jspdf.debug.js"></script>
+      <script src="_js/version1.js"></script>
+      <script type="text/javascript" src="_js/editor-cracha.js"></script>
+    </footer>
   </body>
 </html>
