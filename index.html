@@ -17,19 +17,22 @@
     <div class="row mt-5 mx-0 justify-content-center text-white" style="background-color: #0a3d62">
         <div class="col-lg-4 pb-5 my-auto">
           <p class="lead">Adicione Campos:</p>
-          <form class="needs-validation" onSubmit="return false">
+          <form class="needs-validation" onsubmit="return false">
             <div class="form-group">
               <label for="input-tag">ID da Tag:</label>
-              <input class="form-control" type="text" id="input-tag" placeholder="Ex.: cidade">
+              <input class="form-control" type="text" id="formTag" placeholder="Ex.: cidade" required>
+              <div class="invalid-feedback">
+                Por favor insira o ID da Tag.
+              </div>
             </div>
             <div class="form-group">
               <label for="input-tag">Nome <span class="text-muted">(Opcional)</span>:</label>
-              <input class="form-control" type="text" id="input-tag" placeholder="Ex.: Recife">
+              <input class="form-control" type="text" id="formName" placeholder="Ex.: Recife">
             </div>
             <div class="form-row">
               <div class="col-sm-4">
                 <label for="pais">Cor</label>
-                <select class="custom-select d-block w-100" id="select-cor">
+                <select class="custom-select d-block w-100" id="formColor">
                   <option value="black">Preto</option>
                   <option value="blue">Azul</option>
                   <option value="white">Branco</option>
@@ -41,7 +44,7 @@
               </div>
               <div class="col-sm-4">
                 <label for="select-tamanho">Tamanho</label>
-                <select class="custom-select d-block w-100" id="select-tamanho">
+                <select class="custom-select d-block w-100" id="formSize">
                   <option value="8pt">8pt</option>
                   <option value="10pt">10pt</option>
                   <option value="12pt" selected="selected" >12pt</option>
@@ -56,13 +59,13 @@
                 <div class="form-group">
                   <label for="btn-group">Estilo:</label><br>
                   <div class="btn-group">
-                    <button type="button" class="btn col-4" id="btn-bold">
+                    <button type="button" class="btn col-4" id="formBold">
                       <i class="fas fa-bold"></i>
                     </button>
-                    <button type="button" class="btn col-4" id="btn-italic">
+                    <button type="button" class="btn col-4" id="formItalic">
                       <i class="fas fa-italic"></i>
                     </button>
-                    <button type="button" class="btn col-4" id="btn-underline">
+                    <button type="button" class="btn col-4" id="formUnderline">
                       <i class="fas fa-underline"></i>
                     </button>
                   </div>
@@ -71,7 +74,8 @@
             </div>
             <hr>
             <div class="input-group">
-              <input type="text" class="form-control" id="input-texto-preview" placeholder="Pré-visualização" readonly>
+              <input type="text" class="form-control" id="formPreview" placeholder="Pré-visualização"
+              style="font-weight: bold; text-decoration: none" readonly>
               <div class="input-group-append">
                 <button type="submit" class="btn btn-primary" id="btn-gerar-tag">ADD</button>
               </div>
@@ -79,8 +83,8 @@
           </form>
         </div>
         <div class="col-lg-3 mb-5 pt-3">
-          <div id="container-cracha-view">
-            <div id="area-edit-background">
+          <div id="editorLayer">
+            <div id="editorBackground">
               <img class="fundo-cracha img-fluid" src="_images/sem-fundo.png" style="width: 640px">
             </div>
           </div>
@@ -117,8 +121,7 @@
       <script src="_js/jquery-ui.min.js"></script>
       <script src="_js/bootstrap.min.js"></script>
       <script src="_js/jspdf.debug.js"></script>
-      <script src="_js/version1.js"></script>
-      <script type="text/javascript" src="_js/editor-cracha.js"></script>
+      <script type="text/javascript" src="_js/editor-crachas.js"></script>
     </footer>
   </body>
 </html>

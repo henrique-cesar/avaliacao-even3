@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 
-* {
-  font-family: "Roboto Slab";
+/*ELEMENTOS DO RESIZABLE*/
+
+#formPreview {
+  text-decoration: none;
+  font-weight: normal;
 }
 
-
-/*ELEMENTOS DO RESIZABLE*/
 
 .ui-resizable-handle {
     width: 10px;
